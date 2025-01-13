@@ -1,0 +1,74 @@
+@baseUrl=http://localhost:5578
+@httpUrl=https://www.liftljps.top/utils
+
+ 
+
+###
+get {{baseUrl}}
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoi5aSn6KGX5YWJIiwiaWF0IjoxNzA0NDU4MjQwLCJleHAiOjE3MDQ1NDQ2NDB9.vG3Nk2geHTOxEXdhJbFlTVT30_Wk5eeXVza2pordAAU
+Content-Type: application/json; charset=utf-8
+
+{
+"name":"ddd",
+"mobile":"ddd",
+"password":"ddd"
+}
+
+
+
+###
+post {{baseUrl}}/api/getBlogTest
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoi5aSn6KGX5YWJIiwiaWF0IjoxNzA0NDU4MjQwLCJleHAiOjE3MDQ1NDQ2NDB9.vG3Nk2geHTOxEXdhJbFlTVT30_Wk5eeXVza2pordAAU
+Content-Type: application/json; charset=utf-8
+
+{
+
+"name":"add"
+}
+
+###
+post {{baseUrl}}/api/translate/getTranslate
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoi5aSn6KGX5YWJIiwiaWF0IjoxNzA0NDU4MjQwLCJleHAiOjE3MDQ1NDQ2NDB9.vG3Nk2geHTOxEXdhJbFlTVT30_Wk5eeXVza2pordAAU
+Content-Type: application/json; charset=utf-8
+
+{
+
+"text":"I Love You",
+"toType":"yue",
+"translateType":"baidu"
+}
+
+###
+post {{httpUrl}}/api/translate/getTranslate
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoi5aSn6KGX5YWJIiwiaWF0IjoxNzA0NDU4MjQwLCJleHAiOjE3MDQ1NDQ2NDB9.vG3Nk2geHTOxEXdhJbFlTVT30_Wk5eeXVza2pordAAU
+Content-Type: application/json; charset=utf-8
+
+{
+
+"text":"梁骚猪",
+"appid":"20220308001116096",
+"toType":"en",
+"secretKey":"ewFpMLeFYhi8xqc3bwrg",
+"translateType":"baidu"
+
+}
+
+
+###
+get {{baseUrl}}/api/weixin/getCaiList
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoi5aSn6KGX5YWJIiwiaWF0IjoxNzA0NDU4MjQwLCJleHAiOjE3MDQ1NDQ2NDB9.vG3Nk2geHTOxEXdhJbFlTVT30_Wk5eeXVza2pordAAU
+Content-Type: application/json; charset=utf-8
+
+{
+
+}
+
+
+###
+get {{baseUrl}}/api/user/getUsers
+Content-Type: application/json; charset=utf-8
+
+{
+
+}
+
