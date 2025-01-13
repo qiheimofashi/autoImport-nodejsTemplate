@@ -82,5 +82,7 @@ Project
 部署
 
 > pnpm prod
-> 停止运行 注意项目名需手动配置
+
+停止运行 注意项目名需手动配置
+
 > pnpm stop
